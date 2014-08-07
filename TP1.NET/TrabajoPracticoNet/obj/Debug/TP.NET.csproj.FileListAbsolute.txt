@@ -1,0 +1,12 @@
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\TrabajoPracticoNet.dll.config
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\TrabajoPracticoNet.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\TrabajoPracticoNet.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Identidades.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Recaptcha.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Servicios.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Identidades.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Servicios.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\bin\Recaptcha.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\obj\Debug\TP.NET.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\obj\Debug\TrabajoPracticoNet.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\TrabajoPracticoNet\obj\Debug\TrabajoPracticoNet.pdb

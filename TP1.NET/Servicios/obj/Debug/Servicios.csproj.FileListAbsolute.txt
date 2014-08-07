@@ -1,0 +1,14 @@
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\bin\Debug\Servicios.dll
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\bin\Debug\Servicios.pdb
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\obj\Debug\Servicios.dll
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\obj\Debug\Servicios.pdb
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\bin\Debug\Identidades.dll
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Servicios\bin\Debug\Identidades.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Servicios.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Servicios.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Identidades.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Identidades.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicios.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicios.pdb

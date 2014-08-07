@@ -1,0 +1,7 @@
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Servicios.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Servicios.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Identidades.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\bin\Debug\Identidades.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicio.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicios.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Servicios\obj\Debug\Servicios.pdb

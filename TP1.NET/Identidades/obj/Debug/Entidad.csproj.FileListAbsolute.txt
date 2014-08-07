@@ -1,0 +1,5 @@
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Identidades\bin\Debug\Identidades.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Identidades\bin\Debug\Identidades.pdb
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Identidades\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Identidades\obj\Debug\Identidades.dll
+C:\Users\jorge\Desktop\ \TPFINAL.NET\Identidades\obj\Debug\Identidades.pdb

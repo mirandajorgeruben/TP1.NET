@@ -1,0 +1,180 @@
+Login Usuario
+
+CREATE PROCEDURE buscar_usuario_login
+@mail varchar(50),@pass varchar(50)
+AS
+SELECT *
+FROM Usuarios
+WHERE Email=@mail and Contrasenia=@pass and Estado=1
+
+GO
+
+Buscar usuario por mail
+
+CREATE PROCEDURE buscar_usuario_mail
+@mail varchar(50)
+AS
+SELECT *
+FROM Usuarios
+WHERE Email=@mail 
+
+GO
+
+Actualizar usuario
+
+CREATE PROCEDURE actualizar_usuario
+@mail varchar(50),@nombre varchar(50),@apellido varchar(50), @password varchar(50)
+AS
+UPDATE DBO.Usuarios
+SET Nombre=@nombre, Apellido=@apellido, Contrasenia=@password, Estado=1, FechaActivacion=GETDATE()
+WHERE Email=@mail 
+
+GO
+
+Insertar usuario
+
+
+CREATE PROCEDURE ingresar_usuario
+@mail varchar(50),@nombre varchar(50),@apellido varchar(50), @password varchar(50), @codigo varchar(50)
+AS
+
+INSERT INTO Usuarios
+           ([Nombre]
+           ,[Apellido]
+           ,[Email]
+           ,[Contrasenia]
+           ,[Estado]
+           ,[FechaCreacion]
+           ,[FechaActivacion]
+           ,[CodigoActivacion])
+     VALUES
+           (@nombre,
+            @apellido,
+            @mail,
+            @password,
+            0,
+            GETDATE(),
+            GETDATE(),
+            @codigo)
+GO
+
+
+
+Ingresar carpeta
+
+CREATE PROCEDURE ingresar_carpeta
+@nombre varchar(50),@descripcion varchar(200), @usuarioid int
+AS
+
+INSERT INTO Carpetas
+           (
+           IdUsuario
+           ,Nombre
+           ,Descripcion
+           )
+     VALUES
+           (
+            @usuarioid,
+            @nombre,
+            @descripcion
+           )
+GO
+
+
+Obtener todas las carpetas
+
+CREATE PROCEDURE buscar_carpetas_usuario
+@usuarioid int
+AS
+SELECT c.IdCarpeta, u.Nombre as NombreUsuario, c.Nombre, c.Descripcion
+FROM Carpetas c 
+INNER JOIN Usuarios u ON  u.IdUsuario = c.IdUsuario
+WHERE c.IdUsuario=@usuarioid 
+
+GO
+
+Crear Tarea
+
+CREATE PROCEDURE ingresar_tarea
+@nombre varchar(50),@descripcion varchar(200), @estado int, @prioridad int, @idusuario int, @idcarpeta int
+AS
+
+INSERT INTO Tareas
+           (
+           IdCarpeta
+           ,IdUsuario
+           ,Nombre
+           ,Descripcion
+           ,FechaFin
+           ,Prioridad
+           ,Estado
+           
+           )
+     VALUES
+           (
+            @idcarpeta,
+            @idusuario,
+            @nombre,
+            @descripcion,
+            null,
+            @prioridad,
+            @estado
+           )
+GO
+
+Buscar todas las carpetas
+
+CREATE PROCEDURE buscar_todas_carpetas
+@idusuario int
+AS
+
+SELECT c.IdCarpeta, u.Nombre as NombreUsuario, c.Nombre, c.Descripcion, c.IdUsuario
+FROM Carpetas c 
+INNER JOIN Usuarios u ON  u.IdUsuario = c.IdUsuario
+WHERE c.IdUsuario=@idusuario 
+
+
+GO
+
+Tareas por usuarios
+
+CREATE PROCEDURE buscar_tareas_usuario
+@idusuario int
+AS
+
+SELECT  t.IdTarea as IdTarea, t.FechaFin as FechaFin, t.Nombre as Nombre, t.Descripcion as Descripcion, p.Nombre as NombrePrioridad, c.Nombre as NombreCarpeta, e.Nombre as NombreEstado
+FROM Tareas t 
+INNER JOIN Usuarios u ON  u.IdUsuario = t.IdUsuario
+INNER JOIN Carpetas c ON  c.IdCarpeta = t.IdCarpeta
+INNER JOIN Prioridades p ON  p.IdPrioridad = t.Prioridad
+INNER JOIN Estados e ON  e.IdEstado = t.Estado
+WHERE t.IdUsuario=@idusuario 
+ORDER BY FechaFin Desc
+
+
+GO
+
+
+Buscar por Codigo de activacion Usuario
+
+CREATE PROCEDURE buscar_usuario_codigoactivacion
+@codigoactivacion varchar(50)
+AS
+SELECT *
+FROM Usuarios
+WHERE CodigoActivacion=@codigoactivacion 
+
+GO
+
+
+Activar Usuario
+
+CREATE PROCEDURE activar_usuario
+@idusuario int
+AS
+UPDATE DBO.Usuarios
+SET CodigoActivacion='', FechaActivacion=GETDATE(), Estado = 1
+WHERE IdUsuario=@idusuario 
+
+GO
+

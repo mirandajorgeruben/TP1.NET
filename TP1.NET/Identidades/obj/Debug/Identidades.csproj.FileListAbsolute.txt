@@ -1,0 +1,5 @@
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Identidades\bin\Debug\Identidades.dll
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Identidades\bin\Debug\Identidades.pdb
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Identidades\obj\Debug\Identidades.csprojResolveAssemblyReference.cache
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Identidades\obj\Debug\Identidades.dll
+c:\users\daniel\documents\visual studio 2013\Projects\TrabajoPracticoNet\Identidades\obj\Debug\Identidades.pdb
